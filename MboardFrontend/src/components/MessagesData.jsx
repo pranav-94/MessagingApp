@@ -20,7 +20,7 @@ const FetchData = ()=>{
     const [messages,setMessages] = useState([])
 
   useEffect(()=>{
-     const dataFromBackend = fetch('https://message-board-backend-7gzv.onrender.com/getMessages')
+     const dataFromBackend = fetch('https://messagingapp-ayq9.onrender.com/getMessages')
      .then(async(res)=>{
          const data = await res.json()
          console.log(data)
@@ -63,7 +63,7 @@ const SendMessages = ()=>{
       }
 
 
-          fetch('http://localhost:3000/sendMessage',{
+          fetch('https://messagingapp-ayq9.onrender.com/sendMessage',{
             method:"POST",
             body: JSON.stringify({
                 username: username,
