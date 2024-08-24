@@ -1,5 +1,4 @@
 import Data from "./components/MessagesData"
-import SignUp from "./components/signUp"
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 const App = ()=>{
